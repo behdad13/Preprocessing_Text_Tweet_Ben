@@ -11,6 +11,7 @@ from spacy.lang.en.stop_words import STOP_WORDS as stopwords
 from textblob import TextBlob
 from bs4 import BeautifulSoup
 
+nlp = spacy.load('en_core_web_sm')
 
 
 def _get_word_counts(x):      #don't forget to put _before package name
@@ -193,17 +194,21 @@ def _make_base(x): #lemmantization
 	x = ' '.join(l).strip()
 	return x
 
-def _remove_common_words(x, n=20):
-	x = x.split()
-	freq_common = pd.Series(x).value_counts()
+
+def _get_value_count(df, col):
+	text = ' '.join(df[col])
+	text = text.split()
+	freq = pd.Series(text).value_counts()
+	return freq
+
+
+def _remove_common_words(x, freq, n=20):
 	fn = freq_common[:n]
 	a = [t for t in x.split() if t not in fn]
 	return ' '.join(a)
 
 
-def _remove_rare_words(x, n=20):
-	x = x.split()
-	freq_common = pd.Series(x).value_counts()
+def _remove_rare_words(x, freq, n=20):
 	fn = freq_common[-n:]
 	a = [t for t in x.split() if t not in fn]
 	return ' '.join(a)
