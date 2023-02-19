@@ -63,10 +63,10 @@ def value_count(df, col):
 	return utils._get_value_count(df, col):
 
 def remove_common_words(x, freq, n):
-	return utils._remove_common_words(x)
+	return utils._remove_common_words(x, freq, n)
 
 def remove_rare_words(x, freq, n):
-	return utils._remove_rare_words(x)
+	return utils._remove_rare_words(x, freq, n)
 
 def spelling_checking(x):
 	return utils._spelling_checking(x)
