@@ -60,7 +60,7 @@ def make_base(x):
 	return utils._make_base(x)
 
 def value_count(df, col):
-	return utils._get_value_count(df, col):
+	return utils._get_value_count(df, col)
 
 def remove_common_words(x, freq, n):
 	return utils._remove_common_words(x, freq, n)
