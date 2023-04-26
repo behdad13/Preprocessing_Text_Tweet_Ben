@@ -2,16 +2,21 @@
 
 
 
-This package is created by Behdad (Ben) Ehsani. The package is created for cleaning tweets on Twitter Immidiately and in one-shot coding. Also, some functions can be used for Text Preprocessing. An example is preparedt to how to use it efficiently.
+This package is created by Behdad (Ben) Ehsani. The package is designed for cleaning tweets on Twitter immediately and with one-shot coding. Additionally, some functions can be used for text preprocessing. An example is provided to demonstrate efficient usage.
 
 
-installing library: `pip install preprocessing-text-ben`
+##Installing the library
 
-Unistalling Library: pip uninstall preprocessing-text-ben
+`pip install preprocessing-text-ben`
 
-example of one-shot coding: 
+##Unistalling the library
+ `pip uninstall preprocessing-text-ben`
 
 
+
+Example of one-shot cleaning the code: 
+
+```
 import preprocessing-text-ben as pp
 
 def get_clean(x):
@@ -44,7 +49,10 @@ def get_clean(x):
     return x
 
 
+#here is the cleaned text in one shot
+df['your_cleaned_column'] = df['your_text_column'].apply(lambda x: get_clean(x))
 
+```
 
 
 
