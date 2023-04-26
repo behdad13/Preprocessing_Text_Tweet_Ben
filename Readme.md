@@ -1,4 +1,4 @@
-# Preprocessing python package
+# Text and Tweet Preprocessing package
 
 
 
