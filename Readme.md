@@ -13,8 +13,12 @@ This package is created by Behdad (Ben) Ehsani. The package is designed for clea
 
 `pip uninstall preprocessing-text-ben`
 
+## Functions
+Here is the list of functions in the library:
+1. 
 
 
+## Practical Example
 Example of one-shot cleaning the code: 
 
 ```
