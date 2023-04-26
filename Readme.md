@@ -5,12 +5,13 @@
 This package is created by Behdad (Ben) Ehsani. The package is designed for cleaning tweets on Twitter immediately and with one-shot coding. Additionally, some functions can be used for text preprocessing. An example is provided to demonstrate efficient usage.
 
 
-##Installing the library
+## Installing the library
 
 `pip install preprocessing-text-ben`
 
-##Unistalling the library
- `pip uninstall preprocessing-text-ben`
+## Unistalling the library
+
+`pip uninstall preprocessing-text-ben`
 
 
 
